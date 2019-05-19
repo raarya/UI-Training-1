@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="icon" href="./images/goku.ico" type="image/icon">
+        <!--link tag is used to dsiplay a fav icon on the browser tab alongside the name of the browser tab-->
+    </head>
+    <body>
+        <h1>Forms Page</h1>
+        
+        <hr/>
+        <form> <!-- this tag defines the user input elements in itself-->
+            <fieldset> <!--this tag stacks all the elements in it as a set so that they look together with border
+            and same indentation-->
+                <legend><h2>Employe Form</h2></legend> <!--legend tag is used to give a heading to the fieldset-->
+                <div>
+                    <label for="fname">Offical ID</label>
+                    <input type="text" 
+                    placeholder="firstname"
+                    value="ATBOI^&V&*TY&446"
+                    id="fname"
+                    readonly
+                    name="firstname"/>
+                </div>
+                <div>
+                    <label for="fname">FirstName*</label>
+                    <!--for attribute binds the label with that element with the same ID value. This way
+                    when someone clicks on that label, the cursor automatically moves to the related input element-->
+                    <input type="text" 
+                    placeholder="firstname" 
+                    value="John"
+                    id="fname"
+                    required
+                    name="firstname"/>
+                    <!--placeholder attribute gives the default value of the input element which goes away 
+                    as soon as a user starts typing something, and looks kinda greyed out;
+                    
+                    name attribute is used to map the user input value on that element in the code logic, like
+                    if(firstname = '');
+
+                    required attribute just makes the population of that input element field as mandatory;
+
+                    value attribute gives the default value of the input element which doesn't go goes away 
+                    as soon as a user starts typing something;
+                    -->
+                </div>
+                <div>
+                    <label for="lname">LastName</label>
+                    <input type="text"
+                    placeholder="lastname" 
+                    name="lastName"
+                    id="lname"/>
+                </div>
+                <div>
+                    <label for="mail">Email</label>
+                    <input type="email" placeholder="a@a.com"
+                    id="mail" name="Email"/>
+                </div>
+                <div>
+                    <label for="pwd">Password</label>
+                    <input type="password" placeholder="enter your password"
+                    id="pwd" name="password"/>
+                </div>
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" placeholder="date"
+                    id="date" name="date"/>
+                </div>
+                <div>
+                    <label for="file">File</label>
+                    <input type="file" placeholder="file"
+                    id="file" name="file"/>
+                    <!--this input type is used to upload a file-->
+                </div>
+                <div>
+                    <label for="url">Url</label>
+                    <input type="url" placeholder="url"
+                        id="url" name="url"/>
+                </div>
+                <div>
+                    <label for="color">Color</label>
+                    <input type="color" placeholder="color"
+                    id="color" name="color"/>
+                </div>
+                <div>
+                    <label for="marks">Marks</label>
+                    <input type="number" placeholder="marks"
+                    id="marks" name="marks"/>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="text" placeholder="phone"
+                        id="phone" name="phone" maxlength="10"/>
+                        <!-- maxlength attribute is only applicable for TEXT type; minlength is also available-->
+                </div>
+                <div>
+                    <label for="serc">Search</label>
+                    <input type="search" placeholder="serch your user"
+                    id="serc" name="serc"/>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="gender">Female
+                    </label>
+                    <!--putting a radio type in a label selects that radio button once the label is clicked-->
+                    <label>
+                        <input type="radio" name="gender">Male
+                    </label>
+                    <!-- same name give to 2 radio buttons will allow only one radio to get selected, not both-->
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox">HTML <!--why are we not closing such input tags?--> 
+                    </label>
+                    <label>
+                        <input type="checkbox">CSS
+                    </label>
+                    <label>
+                        <input type="checkbox">JAVASCRIPT
+                    </label>
+                </div>
+                <div>
+                    <label for="comment">Comment</label>
+                    <textarea id="comment"></textarea> <!-- this tag gives text area box which can be resized-->
+                </div>
+                <button type="submit">OK, now submit</button>
+                <!--type = submit means that this button will submit the form after performing the standard
+                HTML5 validations for every input type, like email type must have a proper format, etc-->
+                <button type="reset">Reset</button> <!--reset type resets the entire page-->
+            </fieldset>
+        </form>
+
+    </body>
+</html>
