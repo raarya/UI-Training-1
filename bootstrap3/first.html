@@ -10,6 +10,11 @@
     <body>
         <div class="container"> <!-- this is the main class of bootstrap-->
             <div class="jumbotron">
+                <!--A jumbotron indicates a big box for calling extra attention to some special content or 
+                information. A jumbotron is displayed as a grey box with rounded corners. It also enlarges 
+                the font sizes of the text inside it.
+                Tip: Inside a jumbotron you can put nearly any valid HTML, including other 
+                Bootstrap elements/classes.-->
                 <h1>Bootstrap</h1>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -26,6 +31,10 @@
                 </p>
             </div>  
             <table class="table table-bordered table-striped table-hover">
+                <!-- table class give a table like feel to its contents by dividing rows with lines
+                table-bordered gives border to the table
+                table-striped class adds zebra-stripes to a table
+                table-hover class adds a hover effect (grey background color) on table rows:-->
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -34,7 +43,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="success">
+                    <tr class="success"> <!-- to give different color types to each row-->
                         <td>John</td>
                         <td>UI</td>
                         <td>Bootstrap</td>
@@ -56,7 +65,10 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <!-- bootstrap divides the screen into a grid with 12 columns; class col-md-6 means the contents 
+            of this class will occupy 6 out of those 12 grid columns of the screen, i.e. half of the screen-->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"> 
+                <!-- col-sm means when screen size is small; lg is large screen, md is medium, sm is small, xs is extra small-->
                 <div class="one"></div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
@@ -69,7 +81,9 @@
                 <div class="four"></div>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-6">
-                <button type="button" class="btn btn-success">Submit</button>
+                <button type="button" class="btn btn-success">Submit</button> 
+                <!--btn is bootstrap button class; btn-success is bootstrap class for a success related button-->
+                <!-- there are 5 types of bootstrap button classes for different styles and colors-->
                 <button type="button" class="btn btn-danger">Submit</button>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-6">
