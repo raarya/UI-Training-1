@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>Bootstarp</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container">
+            <br/>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                   <span class="glyphicon glyphicon-user"></span> 
+                   Employee Form
+                </div>
+                <div class="panel-body">
+                    <form> <!-- always remember to enclode form elements in form tag, with or without bootstrap-->
+                    <!--Standard rules for all three form layouts:
+                    wrap labels and form controls in <div class="form-group"> (needed for optimum spacing)
+                    Add class .form-control to all textual <input>, <textarea>, and <select> elements-->    
+                        <div class="form-group">
+                            <label for="fname">First Name:</label>
+                            <input type="text" class="form-control"
+                            id="fname"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" class="form-control"
+                            id="lname"/>
+                        </div>
+                        <div class="radio">
+                            <label class="radio">
+                                <input type="radio" name="choice"/>Ok
+                            </label>
+                        </div>
+                        <div class="radio">
+                                <label class="radio">
+                                    <input type="radio" name="choice" />Not Ok
+                                </label>
+                        </div>
+                        <hr/>
+                            <label class="radio-inline">
+                                <input type="radio" name="choice1"/>Ok
+                            </label>
+
+                            <label class="radio-inline">
+                                <input type="radio" name="choice1" />Not Ok
+                            </label>
+                        <br/>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Fixed
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Angular</option>
+                                <option>React</option>
+                                <option>Node</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="email"/>
+                         </div>
+                         <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-lock"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="password"/>
+                        </div>
+                        <div class="input-group">
+                                <span class="input-group-addon">
+                                   MyBox
+                                </span>
+                                <input type="text" class="form-control" placeholder="password"/>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                    </form> 
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-warning"
+                    data-toggle="modal" data-target="#myform">
+                    Details
+                </button>
+                <!--The Modal plugin is a dialog box/popup window that is displayed on top of the current page-->
+                <!--
+                    To trigger the modal window, you need to use a button or a link.
+                    Then include the two data-* attributes:
+                    data-toggle="modal" opens the modal window
+                    data-target="#myModal" points to the id of the modal
+                -->
+                <div id="myform" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                <!--
+                    The .modal class identifies the content of <div> as a modal and brings focus to it.
+                    The .fade class adds a transition effect which fades the modal in and out. Remove this class if you do not want this effect.
+                    The attribute role="dialog" improves accessibility for people using screen readers.
+                    The .modal-dialog class sets the proper width and margin of the modal.
+                -->
+                        <div class="modal-content">
+                <!--
+                    The <div> with class="modal-content" styles the modal (border, background-color, etc.). Inside this <div>, add the modal's header, body, and footer.
+                    The .modal-header class is used to define the style for the header of the modal. The <button> inside the header has a data-dismiss="modal" attribute which closes the modal if you click on it. The .close class styles the close button, and the .modal-title class styles the header with a proper line-height.
+                    The .modal-body class is used to define the style for the body of the modal. Add any HTML markup here; paragraphs, images, videos, etc.
+                    The .modal-footer class is used to define the style for the footer of the modal. Note that this area is right aligned by default
+                -->
+                            <div class="modal-header">
+                                <button type="button" class="close" 
+                                data-dismiss="modal">&times;</button>
+                                <h3>Form Details</h3>
+                            </div>
+                            <div class="modal-body">
+                                    <p>
+                                            Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the 
+                                            industry's standard dummy text ever since the 1500s, 
+                                            when an unknown printer took a galley of type and 
+                                            scrambled it to make a type specimen book. It has 
+                                            survived not only
+                                    </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger"
+                                data-dismiss="modal">
+                                Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-info alert-dismissible">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">
+                    &times; <!--this is the symbol for X which closes something-->
+                </a>
+                <b> Please fill correct details</b>
+            </div>
+            <div class="alert alert-danger">
+                Please fill correct details
+            </div>
+            <div class="alert alert-success">
+                    Please fill correct details
+            </div>
+        </div>
+    </body>
+</html>
