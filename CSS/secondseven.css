@@ -1,0 +1,75 @@
+.heading{  /* it is better to use instead of center tag*/
+    text-align: center
+}
+.topic{
+    height: 250px;
+    width:300px;
+    border:5px groove teal; /*need to specify type of border, like groove here*/
+    float: left; /* brings the multiple DIVs one after the other*/
+    margin-left:20px;
+    overflow: scroll;
+    border-radius:10%;
+    background: thistle;
+    padding:10px; /*Padding creates extra space within an element, while margin creates extra space around an element.*/
+    box-shadow: 10px 10px gray /*just to give shadowy appearance*/
+}
+
+.secondline{
+    margin-top:20px;
+    background:skyblue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+h2{
+    text-align: center;
+    color:blueviolet
+}
+
+.secondline h2{ /*targets those H2 tags which are in the parent class containing the name as secondline*/
+    color:hotpink
+}
+
+.secondline p {
+    color:#fff
+}
+
+.circletag{
+    height: 300px;
+    border-radius: 50%;
+    overflow: scroll;
+}
+
+body{
+    background-image:radial-gradient(pink,skyblue,slateblue)
+}
+
+@media screen and (min-width:400px){ /*media statements apply the styles in the body based on the mentioned screen sizes by width*/
+   body{
+    background: green
+   } 
+}
+
+@media screen and (min-width:800px){
+    body{
+        background: gray
+       } 
+}
+
+@media screen and (min-width:1000px){
+    body{
+        background-image:radial-gradient(pink,skyblue,slateblue)
+       } 
+}
+
+
+
+
+/* These are types of borders
+solid
+dotted
+dashed
+double
+groove
+*/

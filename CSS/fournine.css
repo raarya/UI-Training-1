@@ -1,0 +1,33 @@
+.bpimage{
+    height:300px;
+    width:200px;
+    margin:2%;
+}
+
+.main span{
+    position: absolute; /* understand properly what POSITION tag does*/
+    margin-top: 5%;
+    margin-left: 2%; /* giving percentages makes the position same  during reizing of the browser window, unlike giving in pixels*/
+    color: red;
+}
+
+#mytext{
+    font-size:20px;
+    visibility: hidden;
+}
+
+.bpimage:hover #mytext{
+    visibility: visible;
+    color:green
+}
+
+.bpimage:hover{
+    /*transform: rotate(10deg) /* rotate element by 10 degrees*/
+    transform: skewX(20deg)*/ /*skews w.r.t X axis*/
+    transform: translate(20px,20px); /* translate moves the element to the specified width and height*/
+    -ms-transform: translate(20px,20px); /*For IE*/
+    -webkit-transform: translate(20px,20px); /*For Safari*/
+    -moz-transform: translate(20px,20px);/*For Mozila*/
+    -o-transform: translate(20px,20px)/*For opera*/ /*some css properties don't work on other browsers well except for chrome unless we specify the browser tag*/
+
+}
