@@ -69,10 +69,6 @@ a + b
 "1010" // 
 var c = 10
 undefined
-a + b + vc
-VM552: 1 Uncaught ReferenceError: vc is not defined
-at<anonymous>: 1: 5
-    (anonymous) @VM552: 1
 a + b + c
 "101010"
 b + c + a
