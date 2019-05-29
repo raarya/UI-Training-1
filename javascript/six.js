@@ -106,7 +106,7 @@ var b = "10"
 undefined
 a+b
 "1010"
-parseInt(a) //parses a string and returns integer
+parseInt(a) //parses a string and returns integer; also parseInt(6.89) will give 6 only
 10
 parseInt(a) + parseInt(b)
 20
