@@ -13,7 +13,7 @@ var a = "i am leraning javascript"
 undefined
 a.replace('javascript','react') //replaces left with right
 "i am leraning react"
-a.length //gives number of charcacters including spaces
+a.length //gives number of charcacters including spaces 
 24
 var welcome = "  hi "
 undefined
