@@ -38,4 +38,35 @@ Task4:
 > If that user is part of array than console.log("allow access")
 > Else add user to the array and say see you next time
 > Next time if that user try to access you have allow user
+//we can use indexOf method here to check if an element is the array
 
+
+Task 5 :
+> Take one array of City
+> If name start with vowel change city name to all capital
+> else print name
+
+
+
+var val = ["john","stephen"]
+var user=document.getElementById("myText").value
+function match(){
+    for(i=0;i<val.length;i++){
+        if(val[i]==user){
+            console.log("Allow Acess")
+        }
+        else
+       {
+            val.push(user)
+             console.log("Added")
+            //doubt var data pushing with iteration how i can stop in 
+            //if condition
+            //document.write("Added");
+            
+       }
+        // else(
+        //     console.log("Nothing is there")
+        // )
+    }
+
+}
