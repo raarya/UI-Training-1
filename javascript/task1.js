@@ -70,3 +70,7 @@ function match(){
     }
 
 }
+
+Task 6 :
+[name,capital,pincode,'Delhi','Delhi',110060, 'Maharastra', 'Mumbai',110060 ]
+convert this array into an object
